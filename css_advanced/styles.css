@@ -1,0 +1,532 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./assets/fonts/source-sans-pro/SourceSansPro-ExtraLight.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./assets/fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./assets/fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./assets/fonts/source-sans-pro/SourceSansPro-LightIt.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./assets/fonts/source-sans-pro/SourceSansPro-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./assets/fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./assets/fonts/source-sans-pro/SourceSansPro-Black.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    font-family: 'SourceSansPro', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+header {
+    height: 110%;
+    background-image: url('./assets/images/Object.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'SourceSansPro', sans-serif;
+    color: #fff !important;
+    margin-right: 35px;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.custom-hero {
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.custom-hero h1 {
+    font-size: 100px;
+    font-weight: 800;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.custom-hero span {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'SourceSansPro', sans-serif;
+    margin: 0 20px;
+    margin-top: auto;
+}
+
+
+.play-icon:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.custom-hero h2 {
+    font-size: 32px;
+    margin-top: 140px;
+    margin-bottom: 80px;
+    font-weight: 200;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.custom-hero h2 a {
+    font-size: 32px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #c271ff;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.custom-hero .pros-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.custom-hero .pro {
+    text-align: center;
+}
+
+.custom-hero .pro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+.custom-hero .pro h3 {
+    margin-top: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.custom-hero .pro p {
+    font-size: 14px;
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.testimonial {
+    background-color: #C271FF;
+    padding: 80px 0;
+}
+
+.testimonial-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.testimonial-image {
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+.testimonial-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-text {
+    flex: 1;
+}
+
+.testimonial-text blockquote {
+    font-size: 22px;
+    font-style: normal;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.testimonial-text h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.testimonial-text p {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.popular-tutorials {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.popular-tutorials h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #C271FF;
+    font-weight: 700;
+}
+
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tutorial-card {
+    text-align: left;
+}
+
+.thumbnail {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.thumbnail img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-icon i {
+    color: #071629;
+    font-size: 28px;
+}
+
+.tutorial-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tutorial-card>p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(7, 22, 41, 0.8);
+    margin-bottom: 15px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #C271FF;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    color: #C271FF;
+    font-size: 14px;
+}
+
+.duration {
+    color: #C271FF;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.free-membership {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.text-purple {
+    color: #C271FF;
+}
+
+.membership-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+.benefit-item {
+    max-width: 200px;
+}
+
+.benefit-icon {
+    width: 45px;
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+.benefit-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.benefit-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.btn-purple {
+    background-color: #c271ff;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 50px;
+    font-weight: 700;
+    font-family: 'SourceSansPro', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 7, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-purple:hover {
+    background-color: white;
+    color: #c271ff;
+    animation: button-hover 0.3s ease-in-out;
+}
+
+.faq {
+    padding: 80px 0;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-column {
+    width: 48%;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+}
+
+.faq-question {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.faq-answer {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #07162980;
+}
+
+.footer {
+    background-color: #071629;
+    padding: 30px 100px;
+    color: #ffffff;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.footer-content {
+    list-style: none;
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    height: 30px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.social-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #071629;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-button:hover {
+    background-color: #C271FF;
+    color: #ffffff;
+}
+
+.social-button i {
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.35;
+}
+
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-column {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@keyframes btn-purple {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
